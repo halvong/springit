@@ -1,13 +1,11 @@
 Springit by Dan Vega, Packt video
 
-5/9/2020, Sat
+5/15/2020, Fri
 
-Profiles
+entities
 
 #url
-https://subscription.packtpub.com/video/programming/9781839217562/p4/video4_4/profiles
-
-
+https://subscription.packtpub.com/video/programming/9781839217562/p5/video5_2/entities
 
 #createclob is not implemented
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true in your "application.yml"

@@ -24,19 +24,20 @@ public class SpringitApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringitApplication.class);
 
-	@Autowired
-	private SpringitProperties springitProperties;
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringitApplication.class, args);
 	}
 
 	@Bean
-	//@Profile("dev")
 	CommandLineRunner runner() {
 		return args -> {
-			System.out.println("--- Welcome Hal! ---" + springitProperties.getWelcomeMsg());
-			//log.info("CommandLineRunner");
+		    log.error("error");
+			log.warn("warn");
+			log.info("info");
+			log.debug("debug");
+			log.trace("trace");
 		};
 	}
 
