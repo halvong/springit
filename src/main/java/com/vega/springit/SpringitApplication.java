@@ -1,6 +1,10 @@
 package com.vega.springit;
 
 import com.vega.springit.config.SpringitProperties;
+import com.vega.springit.domain.Comment;
+import com.vega.springit.domain.Link;
+import com.vega.springit.repository.CommentRepository;
+import com.vega.springit.repository.LinkRepository;
 import org.ocpsoft.prettytime.PrettyTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +24,7 @@ import java.util.Arrays;
 
 @SpringBootApplication
 @EnableConfigurationProperties(SpringitProperties.class)
+@EnableJpaAuditing
 public class SpringitApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringitApplication.class);
@@ -31,13 +36,19 @@ public class SpringitApplication {
 	}
 
 	@Bean
-	CommandLineRunner runner() {
+	CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
 		return args -> {
-		    log.error("error");
-			log.warn("warn");
-			log.info("info");
-			log.debug("debug");
-			log.trace("trace");
+
+				Link link = new Link("AltaVista is my old search engine","https://www.altavista.com");
+				linkRepository.save(link);
+
+				Comment comment = new Comment("AltaVista gives free dialup.", link);
+				commentRepository.save(comment);
+
+				System.out.println("Just inserted a link and comment");
+
+				Link firstLink = linkRepository.findByTitle("AltaVista is my old search engine");
+				System.out.println(firstLink.getTitle());
 		};
 	}
 
