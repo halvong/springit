@@ -2,7 +2,7 @@ package com.vega.springit.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("springit")
+@ConfigurationProperties("springit")//for application.properties
 public class SpringitProperties {
 
     private String welcomeMsg = "Hello, World from SpringitProperties!";

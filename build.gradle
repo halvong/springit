@@ -37,7 +37,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-configuration-processor:2.0.0.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-mail:2.0.0.RELEASE'
     implementation 'org.projectlombok:lombok:1.16.20'
-    //implementation 'org.springframework.boot:spring-boot-configuration-processor:2.0.0.RELEASE'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.0.0.RELEASE'
 
     //runtime 'mysql:mysql-connector-java:5.1.45'

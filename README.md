@@ -1,12 +1,11 @@
 Springit by Dan Vega, Packt video
 
-5/9/2020, Sat
+5/23/2020, Sat
 
-Profiles
+Entity Relationships
 
 #url
-https://subscription.packtpub.com/video/programming/9781839217562/p4/video4_4/profiles
-
+https://subscription.packtpub.com/video/programming/9781839217562/p5/video5_5/entity-relationships-mappings
 
 
 #createclob is not implemented
