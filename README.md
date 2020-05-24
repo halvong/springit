@@ -2,11 +2,10 @@ Springit by Dan Vega, Packt video
 
 5/23/2020, Sat
 
-Entity Relationships
+Database Schema & Data
 
 #url
-https://subscription.packtpub.com/video/programming/9781839217562/p5/video5_5/entity-relationships-mappings
-
+https://subscription.packtpub.com/video/programming/9781839217562/p6/video6_4/database-schema-and-data
 
 #createclob is not implemented
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true in your "application.yml"
