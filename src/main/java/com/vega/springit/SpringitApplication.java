@@ -35,6 +35,7 @@ public class SpringitApplication {
 		SpringApplication.run(SpringitApplication.class, args);
 	}
 
+	/*
 	@Bean
 	CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
 		return args -> {
@@ -51,5 +52,6 @@ public class SpringitApplication {
 				System.out.println(firstLink.getTitle());
 		};
 	}
+	 */
 
 }
