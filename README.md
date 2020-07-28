@@ -5,8 +5,7 @@ Springit by Dan Vega, Packt video
 Spring MVC Controller
 
 #url
-https://subscription.packtpub.com/video/programming/9781839217562/p6/video6_4/database-schema-and-data
-
+https://subscription.packtpub.com/video/programming/9781839217562/p7/video7_1/spring-mvc-what-is-a-controller
 
 #notes
 log.error("error");
