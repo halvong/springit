@@ -4,15 +4,18 @@ Springit by Dan Vega, Packt video
 
 Spring MVC Controller
 
-#url
-https://subscription.packtpub.com/video/programming/9781839217562/p7/video7_1/spring-mvc-what-is-a-controller
+controller doesn't work
 
+#url
+https://subscription.packtpub.com/video/programming/9781839217562/p7/video7_3/controller-handler-methods
 #notes
 log.error("error");
 log.warn("warn");
 log.info("info");
 log.debug("debug");
 log.trace("trace");
+
+@Component,@Controller,@Service,@Repository
 
 
 #createclob is not implemented
